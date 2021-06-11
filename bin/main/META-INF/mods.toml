@@ -1,0 +1,43 @@
+
+modLoader="javafml" #mandatory
+
+loaderVersion="[36,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+
+license="All rights reserved"
+
+[[mods]] #mandatory
+
+modId="necessaryadditions" #mandatory
+
+version="1.0.0" #mandatory
+ 
+displayName="Necessary Additions" #mandatory
+
+
+displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
+
+logoFile="examplemod.png" #optional
+
+credits="Made by TheRifty with help from the modding community " 
+
+authors="TheRifty" 
+
+description='''
+This mod adds loads of different items and blocks to the game to make it easier to get started
+and to do other things!!
+'''
+
+
+[[dependencies.necessaryadditions]] 
+    modId="forge" 
+    mandatory=true 
+    versionRange="[36,)" 
+    ordering="NONE"
+    side="BOTH"
+    
+[[dependencies.necessaryadditions]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"

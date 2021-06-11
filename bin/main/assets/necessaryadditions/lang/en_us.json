@@ -1,0 +1,11 @@
+{
+	"item.necessaryadditions.gilded_redstone": "Gilded Redstone",
+	"item.necessaryadditions.gilded_redstone_sword": "Gilded Redstone Sword",
+	
+	"block.necessaryadditions.example_block": "Example Block",
+	"block.necessaryadditions.gilded_redstone_ore": "Gilded Redstone Ore",
+	"block.necessaryadditions.quarry": "Quarry",
+	
+	"itemGroup.necessary_additions": "Necessary Additions"
+	
+}

@@ -1,0 +1,77 @@
+---- Minecraft Crash Report ----
+// I let you down. Sorry :(
+
+Time: 11/06/2021, 03:16
+Description: Exception in server tick loop
+
+java.lang.Error: Unresolved compilation problems: 
+	The constructor Slot(PlayerInventory, int, int) is undefined
+	Syntax error, insert ";" to complete BlockStatements
+
+	at com.therifty.necessaryadditions.common.container.DisplayCaseContainer.<init>(DisplayCaseContainer.java:30) ~[?:?] {re:classloading}
+	at com.therifty.necessaryadditions.common.te.DisplayCaseTileEntity.createMenu(DisplayCaseTileEntity.java:49) ~[?:?] {re:classloading}
+	at net.minecraft.tileentity.LockableLootTileEntity.createMenu(SourceFile:160) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.network.NetworkHooks.openGui(NetworkHooks.java:224) ~[forge:?] {re:classloading}
+	at net.minecraftforge.fml.network.NetworkHooks.openGui(NetworkHooks.java:190) ~[forge:?] {re:classloading}
+	at com.therifty.necessaryadditions.common.block.DisplayCaseBlock.onBlockActivated(DisplayCaseBlock.java:46) ~[?:?] {re:classloading}
+	at net.minecraft.block.AbstractBlock$AbstractBlockState.onBlockActivated(AbstractBlock.java:640) ~[forge:?] {re:classloading}
+	at net.minecraft.server.management.PlayerInteractionManager.func_219441_a(PlayerInteractionManager.java:338) ~[forge:?] {re:classloading}
+	at net.minecraft.network.play.ServerPlayNetHandler.processTryUseItemOnBlock(ServerPlayNetHandler.java:958) ~[forge:?] {re:classloading}
+	at net.minecraft.network.play.client.CPlayerTryUseItemOnBlockPacket.processPacket(SourceFile:36) ~[forge:?] {re:classloading}
+	at net.minecraft.network.play.client.CPlayerTryUseItemOnBlockPacket.processPacket(SourceFile:10) ~[forge:?] {re:classloading}
+	at net.minecraft.network.PacketThreadUtil.func_225383_a(SourceFile:21) ~[forge:?] {re:classloading}
+	at net.minecraft.util.concurrent.TickDelayedTask.run(SourceFile:18) ~[forge:?] {re:classloading}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.run(SourceFile:144) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.util.concurrent.RecursiveEventLoop.run(SourceFile:23) ~[forge:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:734) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:159) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.driveOne(SourceFile:118) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.driveOneInternal(MinecraftServer.java:717) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.driveOne(MinecraftServer.java:711) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.driveUntil(SourceFile:127) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.runScheduledTasks(MinecraftServer.java:697) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:646) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.func_240783_a_(MinecraftServer.java:232) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:832) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 15.0.2, Oracle Corporation
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 750091776 bytes (715 MB) / 1518338048 bytes (1448 MB) up to 4282384384 bytes (4084 MB)
+	CPUs: 12
+	JVM Flags: 2 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -XX:+ShowCodeDetailsInExceptionMessages
+	ModLauncher: 8.0.9+86+master.3cf110c
+	ModLauncher launch target: fmluserdevclient
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/mixin-0.8.2.jar mixin PLUGINSERVICE 
+		/eventbus-4.0.0.jar eventbus PLUGINSERVICE 
+		/forge-1.16.5-36.1.0_mapped_snapshot_20201028-1.16.3-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.1.0_mapped_snapshot_20201028-1.16.3-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/forge-1.16.5-36.1.0_mapped_snapshot_20201028-1.16.3-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/accesstransformers-3.0.1.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.5-36.1.0_mapped_snapshot_20201028-1.16.3-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.2.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.5-36.1.0_mapped_snapshot_20201028-1.16.3-launcher.jar fml TRANSFORMATIONSERVICE 
+	FML: 36.1
+	Forge: net.minecraftforge:36.1.0
+	FML Language Providers: 
+		javafml@36.1
+		minecraft@1
+	Mod List: 
+		client-extra.jar                                  |Minecraft                     |minecraft                     |1.16.5              |DONE      |a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		main                                              |Necessary Additions           |necessaryadditions            |1.0.0               |DONE      |NOSIGNATURE
+		forge-1.16.5-36.1.0_mapped_snapshot_20201028-1.16.|Forge                         |forge                         |36.1.0              |DONE      |NOSIGNATURE
+	Crash Report UUID: 7064b0e8-e24d-41a4-8663-4abb1d53c8f4
+	Player Count: 1 / 8; [ServerPlayerEntity['Dev'/138, l='ServerLevel[New World]', x=-302.18, y=14.90, z=-189.30]]
+	Data Packs: vanilla, mod:necessaryadditions, mod:forge
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'

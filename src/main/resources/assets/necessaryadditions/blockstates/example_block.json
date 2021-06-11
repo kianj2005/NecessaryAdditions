@@ -1,0 +1,5 @@
+{
+	"variants": {
+		"": { "model": "necessaryadditions:block/example_block" }
+	}
+}

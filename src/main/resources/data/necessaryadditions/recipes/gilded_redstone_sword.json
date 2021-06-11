@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"g",
+		"g",
+		"s"
+
+	],
+	"key": {
+		"g": {
+		"item": "necessaryadditions:gilded_redstone"
+		},
+		
+		"s": {
+		"item": "minecraft:stick"
+		}
+	},
+	"result": {
+		"item": "necessaryadditions:gilded_redstone_sword",
+		"count": 1
+		}
+}
