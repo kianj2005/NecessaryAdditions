@@ -18,7 +18,7 @@ import net.minecraft.util.text.TranslationTextComponent;
 
 public class DisplayCaseTileEntity extends LockableLootTileEntity {
 
-	private static int slots = 1;
+	public static int slots = 1;
 	
 	protected NonNullList<ItemStack> items = NonNullList.withSize(slots, ItemStack.EMPTY);
 	

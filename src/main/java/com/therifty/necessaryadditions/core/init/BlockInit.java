@@ -27,7 +27,7 @@ public class BlockInit {
 	
 	public static final RegistryObject<Block> GILDED_REDSTONE_ORE = BLOCKS
 			.register("gilded_redstone_ore",
-					() -> new Block(AbstractBlock.Properties.from(Blocks.REDSTONE_ORE))); 
+					() -> new Block(AbstractBlock.Properties.from(Blocks.REDSTONE_BLOCK))); 
 
 	
 	

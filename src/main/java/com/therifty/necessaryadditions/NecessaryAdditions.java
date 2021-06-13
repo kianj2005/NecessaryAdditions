@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.therifty.necessaryadditions.core.init.BlockInit;
+import com.therifty.necessaryadditions.core.init.ContainerTypesInit;
 import com.therifty.necessaryadditions.core.init.FeatureInit;
 import com.therifty.necessaryadditions.core.init.ItemInit;
 import com.therifty.necessaryadditions.core.init.TileEntityTypesInit;
@@ -37,6 +38,7 @@ public class NecessaryAdditions {
 		BlockInit.BLOCKS.register(bus);
 		TileEntityTypesInit.TILE_ENTITY_TYPE.register(bus);
 		ItemInit.ITEMS.register(bus);
+		ContainerTypesInit.CONTAINER_TYPES.register(bus);
 		
 		MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FeatureInit::addOres);
 		MinecraftForge.EVENT_BUS.register(this);

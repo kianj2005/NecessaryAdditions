@@ -1,5 +1,7 @@
 {
-	"variants": {
-		"": { "model": "necessaryadditions:block/gilded_redstone_ore" }
-	}
+  "variants": {
+    "": {
+      "model": "necessaryadditions:block/gilded_redstone_ore"
+    }
+  }
 }
